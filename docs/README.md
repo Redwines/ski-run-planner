@@ -19,7 +19,7 @@
 
 | Document | Status | Last Updated |
 |----------|--------|--------------|
-| PRD | Draft | — |
+| PRD | Complete | 2025-02-12 |
 | System Extraction | Complete | 2025-02-12 |
 | TSD | Draft | — |
 | UX/UI | Draft | — |
