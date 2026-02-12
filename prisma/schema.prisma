@@ -1,0 +1,106 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum LiftType {
+  chairlift
+  gondola
+  drag
+  cable_car
+}
+
+enum TerrainType {
+  groomed
+  moguls
+  tree
+  off_piste
+}
+
+enum Difficulty {
+  GREEN
+  BLUE
+  RED
+  BLACK
+  DOUBLE_BLACK
+}
+
+model Resort {
+  id        String     @id
+  name      String
+  region    String?
+  baseAreas BaseArea[]
+  lifts     Lift[]
+  runs      Run[]
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+}
+
+model BaseArea {
+  id       String         @id
+  resortId String
+  name     String
+  resort   Resort         @relation(fields: [resortId], references: [id], onDelete: Cascade)
+  lifts    BaseAreaLift[]
+
+  @@index([resortId])
+}
+
+model Lift {
+  id            String         @id
+  resortId      String
+  name          String
+  nameJa        String?
+  type          LiftType
+  baseElevation Int?
+  topElevation  Int?
+  positionX     Float          @default(50)
+  positionY     Float          @default(50)
+  resort        Resort         @relation(fields: [resortId], references: [id], onDelete: Cascade)
+  baseAreas     BaseAreaLift[]
+  runsFrom      Run[]          @relation("RunStartLift")
+  runsTo        RunEndLift[]
+
+  @@index([resortId])
+}
+
+model BaseAreaLift {
+  baseAreaId String
+  liftId     String
+  baseArea   BaseArea @relation(fields: [baseAreaId], references: [id], onDelete: Cascade)
+  lift       Lift     @relation(fields: [liftId], references: [id], onDelete: Cascade)
+
+  @@id([baseAreaId, liftId])
+}
+
+model Run {
+  id                 String       @id
+  resortId           String
+  name               String
+  nameJa             String?
+  difficultyStandard Difficulty
+  difficultyRaw      String?
+  terrainType        TerrainType  @default(groomed)
+  length             Int?
+  maxGrade           Int?
+  startLiftId        String
+  resort             Resort       @relation(fields: [resortId], references: [id], onDelete: Cascade)
+  startLift          Lift         @relation("RunStartLift", fields: [startLiftId], references: [id])
+  endLifts           RunEndLift[]
+
+  @@index([resortId])
+  @@index([difficultyStandard])
+}
+
+model RunEndLift {
+  runId  String
+  liftId String
+  run    Run    @relation(fields: [runId], references: [id], onDelete: Cascade)
+  lift   Lift   @relation(fields: [liftId], references: [id])
+
+  @@id([runId, liftId])
+}

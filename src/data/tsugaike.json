@@ -1,0 +1,303 @@
+{
+  "id": "tsugaike",
+  "name": "Tsugaike Kogen",
+  "region": "Hakuba Valley",
+  "baseAreas": [
+    {
+      "id": "central-base",
+      "name": "Central Village",
+      "liftIds": ["eve-gondola", "karamatsu-hs-pair", "tsugaike-1-pair"]
+    },
+    {
+      "id": "kanenaru-base",
+      "name": "Kane-no-naru-oka",
+      "liftIds": ["kanenaru-romance"]
+    }
+  ],
+  "lifts": [
+    {
+      "id": "eve-gondola",
+      "name": "EVE Gondola",
+      "nameJa": "ゴンドラリフト「イヴ」",
+      "type": "gondola",
+      "baseElevation": 800,
+      "topElevation": 1260,
+      "positionX": 50,
+      "positionY": 90
+    },
+    {
+      "id": "hanoki-hs-pair",
+      "name": "Han-no-ki High Speed Pair",
+      "nameJa": "ハンの木高速ペアリフト",
+      "type": "chairlift",
+      "baseElevation": 1500,
+      "topElevation": 1704,
+      "positionX": 35,
+      "positionY": 10
+    },
+    {
+      "id": "hanoki-1-quad",
+      "name": "Han-no-ki No.1 Quad",
+      "nameJa": "ハンの木第1クワッドリフト",
+      "type": "chairlift",
+      "baseElevation": 1260,
+      "topElevation": 1500,
+      "positionX": 30,
+      "positionY": 30
+    },
+    {
+      "id": "hanoki-3-quad",
+      "name": "Han-no-ki No.3 Quad",
+      "nameJa": "ハンの木第3クワッドリフト",
+      "type": "chairlift",
+      "baseElevation": 1260,
+      "topElevation": 1450,
+      "positionX": 25,
+      "positionY": 35
+    },
+    {
+      "id": "tsuga-2-pair",
+      "name": "Tsuga No.2 Pair",
+      "nameJa": "つが第2ペアリフト",
+      "type": "chairlift",
+      "baseElevation": 1500,
+      "topElevation": 1704,
+      "positionX": 55,
+      "positionY": 10
+    },
+    {
+      "id": "tsuga-1-pair",
+      "name": "Tsuga No.1 Pair",
+      "nameJa": "つが第1ペアリフト",
+      "type": "chairlift",
+      "baseElevation": 1260,
+      "topElevation": 1500,
+      "positionX": 60,
+      "positionY": 25
+    },
+    {
+      "id": "shirakaba-quad",
+      "name": "Shirakaba Quad",
+      "nameJa": "白樺クワッドリフト",
+      "type": "chairlift",
+      "baseElevation": 1100,
+      "topElevation": 1350,
+      "positionX": 45,
+      "positionY": 40
+    },
+    {
+      "id": "maruyama-1-quad",
+      "name": "Maruyama No.1 Quad",
+      "nameJa": "丸山第1クワッドリフト",
+      "type": "chairlift",
+      "baseElevation": 950,
+      "topElevation": 1100,
+      "positionX": 55,
+      "positionY": 60
+    },
+    {
+      "id": "champion-quad",
+      "name": "Champion Quad",
+      "nameJa": "チャンピオンクワッドリフト",
+      "type": "chairlift",
+      "baseElevation": 950,
+      "topElevation": 1200,
+      "positionX": 75,
+      "positionY": 45
+    },
+    {
+      "id": "tsugaike-1-pair",
+      "name": "Tsugaike No.1 Pair",
+      "nameJa": "栂池第1ペアリフト",
+      "type": "chairlift",
+      "baseElevation": 800,
+      "topElevation": 950,
+      "positionX": 60,
+      "positionY": 80
+    },
+    {
+      "id": "tsugaike-central-triple",
+      "name": "Tsugaike Central Triple",
+      "nameJa": "栂池中央トリプルチェアリフト",
+      "type": "chairlift",
+      "baseElevation": 850,
+      "topElevation": 1050,
+      "positionX": 65,
+      "positionY": 70
+    },
+    {
+      "id": "karamatsu-hs-pair",
+      "name": "Karamatsu High Speed Pair",
+      "nameJa": "からまつ高速ペアリフト",
+      "type": "chairlift",
+      "baseElevation": 800,
+      "topElevation": 1000,
+      "positionX": 45,
+      "positionY": 75
+    },
+    {
+      "id": "kanenaru-skyliner-2",
+      "name": "Kane-no-naru-oka Skyliner II",
+      "nameJa": "鐘の鳴る丘スカイライナーⅡ",
+      "type": "chairlift",
+      "baseElevation": 900,
+      "topElevation": 1050,
+      "positionX": 15,
+      "positionY": 55
+    },
+    {
+      "id": "kanenaru-skyliner-3",
+      "name": "Kane-no-naru-oka Skyliner III",
+      "nameJa": "鐘の鳴る丘スカイライナーⅢ",
+      "type": "chairlift",
+      "baseElevation": 850,
+      "topElevation": 1000,
+      "positionX": 18,
+      "positionY": 65
+    },
+    {
+      "id": "kanenaru-romance",
+      "name": "Kane-no-naru-oka Romance",
+      "nameJa": "鐘の鳴る丘ロマンスリフト",
+      "type": "chairlift",
+      "baseElevation": 800,
+      "topElevation": 900,
+      "positionX": 12,
+      "positionY": 80
+    }
+  ],
+  "runs": [
+    {
+      "id": "uma-no-se",
+      "name": "Horseback",
+      "nameJa": "馬の背コース",
+      "difficultyStandard": "BLACK",
+      "difficultyRaw": "上級",
+      "terrainType": "groomed",
+      "length": 1300,
+      "maxGrade": 32,
+      "startLiftId": "hanoki-hs-pair",
+      "endLiftIds": ["hanoki-1-quad", "shirakaba-quad"]
+    },
+    {
+      "id": "champion",
+      "name": "Champion",
+      "nameJa": "チャンピオンゲレンデ",
+      "difficultyStandard": "BLACK",
+      "difficultyRaw": "上級",
+      "terrainType": "groomed",
+      "length": 1000,
+      "maxGrade": 35,
+      "startLiftId": "champion-quad",
+      "endLiftIds": ["tsugaike-central-triple", "karamatsu-hs-pair"]
+    },
+    {
+      "id": "tsuga-no-mori",
+      "name": "Tsuga Forest",
+      "nameJa": "栂の森ゲレンデ",
+      "difficultyStandard": "BLUE",
+      "difficultyRaw": "中級",
+      "terrainType": "groomed",
+      "length": 630,
+      "maxGrade": 23,
+      "startLiftId": "tsuga-2-pair",
+      "endLiftIds": ["hanoki-hs-pair", "shirakaba-quad"]
+    },
+    {
+      "id": "hanoki",
+      "name": "Han-no-ki",
+      "nameJa": "ハンの木ゲレンデ",
+      "difficultyStandard": "BLUE",
+      "difficultyRaw": "中級",
+      "terrainType": "groomed",
+      "length": 3000,
+      "maxGrade": 30,
+      "startLiftId": "hanoki-1-quad",
+      "endLiftIds": ["shirakaba-quad", "eve-gondola"]
+    },
+    {
+      "id": "shirakaba",
+      "name": "Shirakaba",
+      "nameJa": "白樺ゲレンデ",
+      "difficultyStandard": "BLUE",
+      "difficultyRaw": "中級",
+      "terrainType": "groomed",
+      "length": 1200,
+      "maxGrade": 23,
+      "startLiftId": "shirakaba-quad",
+      "endLiftIds": ["eve-gondola", "maruyama-1-quad"]
+    },
+    {
+      "id": "maruyama",
+      "name": "Maruyama",
+      "nameJa": "丸山ゲレンデ",
+      "difficultyStandard": "BLUE",
+      "difficultyRaw": "中級",
+      "terrainType": "groomed",
+      "length": 700,
+      "maxGrade": 15,
+      "startLiftId": "maruyama-1-quad",
+      "endLiftIds": ["tsugaike-central-triple", "karamatsu-hs-pair"]
+    },
+    {
+      "id": "rindou",
+      "name": "Forest Road",
+      "nameJa": "林道コース",
+      "difficultyStandard": "GREEN",
+      "difficultyRaw": "初級",
+      "terrainType": "groomed",
+      "length": 6600,
+      "maxGrade": 12,
+      "startLiftId": "shirakaba-quad",
+      "endLiftIds": ["kanenaru-skyliner-2", "eve-gondola"]
+    },
+    {
+      "id": "kanenaru-2",
+      "name": "Kane-no-naru-oka 2",
+      "nameJa": "鐘の鳴る丘第2ゲレンデ",
+      "difficultyStandard": "GREEN",
+      "difficultyRaw": "初級",
+      "terrainType": "groomed",
+      "length": 890,
+      "maxGrade": 15,
+      "startLiftId": "kanenaru-skyliner-2",
+      "endLiftIds": ["kanenaru-skyliner-3", "kanenaru-romance"]
+    },
+    {
+      "id": "kanenaru",
+      "name": "Kane-no-naru-oka",
+      "nameJa": "鐘の鳴る丘ゲレンデ",
+      "difficultyStandard": "GREEN",
+      "difficultyRaw": "初級",
+      "terrainType": "groomed",
+      "length": 980,
+      "maxGrade": 19,
+      "startLiftId": "kanenaru-skyliner-3",
+      "endLiftIds": ["kanenaru-romance", "eve-gondola"]
+    },
+    {
+      "id": "karamatsu",
+      "name": "Karamatsu",
+      "nameJa": "からまつゲレンデ",
+      "difficultyStandard": "GREEN",
+      "difficultyRaw": "初級",
+      "terrainType": "groomed",
+      "length": 1200,
+      "maxGrade": 10,
+      "startLiftId": "karamatsu-hs-pair",
+      "endLiftIds": ["tsugaike-1-pair", "eve-gondola"]
+    },
+    {
+      "id": "oyanohara",
+      "name": "Oya-no-hara",
+      "nameJa": "親の原ゲレンデ",
+      "difficultyStandard": "GREEN",
+      "difficultyRaw": "初級",
+      "terrainType": "groomed",
+      "length": 1200,
+      "maxGrade": 10,
+      "startLiftId": "tsugaike-1-pair",
+      "endLiftIds": ["eve-gondola"]
+    }
+  ]
+}

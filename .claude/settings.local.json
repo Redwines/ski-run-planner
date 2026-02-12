@@ -5,7 +5,13 @@
       "Bash(git add:*)",
       "Bash(git commit:*)",
       "Bash(git remote:*)",
-      "Bash(git push)"
+      "Bash(git push)",
+      "WebFetch(domain:www.hakubavalley.com)",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --no-git --import-alias \"@/*\" --skip-install)",
+      "Bash(npm install:*)",
+      "Bash(npx prisma generate:*)",
+      "Bash(npm test:*)",
+      "Bash(npm run build:*)"
     ]
   }
 }
