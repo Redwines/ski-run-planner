@@ -7,6 +7,7 @@
 | Document | Description |
 |----------|-------------|
 | [PRD](./prd.md) | Product Requirements Document |
+| [System Extraction](./system-extraction.md) | Domain entities, actors, architecture implications |
 | [TSD](./tsd.md) | Technical System Design |
 | [UX/UI](./ux-ui.md) | User experience flows and interaction specs |
 | [API](./api.md) | API endpoints and contracts |
@@ -19,6 +20,7 @@
 | Document | Status | Last Updated |
 |----------|--------|--------------|
 | PRD | Draft | — |
+| System Extraction | Complete | 2025-02-12 |
 | TSD | Draft | — |
 | UX/UI | Draft | — |
 | API | Draft | — |
